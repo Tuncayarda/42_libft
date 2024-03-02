@@ -6,13 +6,13 @@
 /*   By: tuaydin <tuaydin@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/28 23:52:18 by tuaydin           #+#    #+#             */
-/*   Updated: 2024/02/29 00:20:57 by tuaydin          ###   ########.fr       */
+/*   Updated: 2024/03/01 14:56:09 by tuaydin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_get_int_size(int n)
+static size_t	ft_get_int_size(int n)
 {
 	size_t	rtn;
 	long	num;

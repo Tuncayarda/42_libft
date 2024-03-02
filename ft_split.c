@@ -6,13 +6,13 @@
 /*   By: tuaydin <tuaydin@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/28 21:36:12 by tuaydin           #+#    #+#             */
-/*   Updated: 2024/02/28 22:42:32 by tuaydin          ###   ########.fr       */
+/*   Updated: 2024/03/01 14:56:45 by tuaydin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_word_count(char const *s, char c)
+static size_t	ft_word_count(char const *s, char c)
 {
 	int	i;
 	int	wc;
