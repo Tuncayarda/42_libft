@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tuaydin <tuaydin@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/29 19:02:09 by tuaydin           #+#    #+#             */
-/*   Updated: 2024/02/29 19:31:33 by tuaydin          ###   ########.fr       */
+/*   Updated: 2024/03/30 00:49:53 by tuaydin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*l_ptr;
 
-	if (!lst && !(*lst))
+	if (!lst || !(*lst))
 		return ;
 	l_ptr = *lst;
 	while (l_ptr != NULL)

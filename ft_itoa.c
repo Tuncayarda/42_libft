@@ -6,7 +6,7 @@
 /*   By: tuaydin <tuaydin@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/28 23:52:18 by tuaydin           #+#    #+#             */
-/*   Updated: 2024/03/01 14:56:09 by tuaydin          ###   ########.fr       */
+/*   Updated: 2024/03/30 00:43:02 by tuaydin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ char	*ft_itoa(int n)
 	num = (long)n;
 	size = ft_get_int_size(n);
 	str = (char *)malloc(sizeof(char) * (size + 1));
+	if (!str)
+		return (NULL);
 	if (!num)
 		str[0] = '0';
 	if (num < 0)

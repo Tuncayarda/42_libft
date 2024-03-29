@@ -6,7 +6,7 @@
 /*   By: tuaydin <tuaydin@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/28 21:36:12 by tuaydin           #+#    #+#             */
-/*   Updated: 2024/03/01 14:56:45 by tuaydin          ###   ########.fr       */
+/*   Updated: 2024/03/30 00:49:17 by tuaydin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static size_t	ft_word_count(char const *s, char c)
 
 	wc = 0;
 	i = 0;
-	if (!s[i])
+	if (!s)
 		return (0);
 	while (s[i])
 	{
@@ -44,7 +44,7 @@ char	**ft_split(char const *s, char c)
 	k = 0;
 	tab = (char **)malloc(sizeof(char *) * (ft_word_count(s, c) + 1));
 	if (!s || !tab)
-		return (0);
+		return (NULL);
 	while (s[i])
 	{
 		while (s[i] == c)

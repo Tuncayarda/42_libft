@@ -6,7 +6,7 @@
 /*   By: tuaydin <tuaydin@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 11:10:03 by tuaydin           #+#    #+#             */
-/*   Updated: 2024/02/26 11:17:43 by tuaydin          ###   ########.fr       */
+/*   Updated: 2024/03/29 23:55:38 by tuaydin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	d_curs = 0;
 	s_curs = 0;
-	d_len = ft_strlen(dst);
-	s_len = ft_strlen(src);
+	if (size != 0)
+	{
+		d_len = ft_strlen(dst);
+		s_len = ft_strlen(src);
+	}
 	if (size == 0 || size <= d_len)
 		return (size + s_len);
 	while (dst[d_curs])
