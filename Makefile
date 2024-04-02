@@ -44,12 +44,9 @@ B_SRCS = 	ft_lstnew_bonus.c 			\
 			ft_lstmap_bonus.c
 
 NAME	= libft.a
-FLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror
 M_OBJS	= ${M_SRCS:.c=.o}
 B_OBJS	= ${B_SRCS:.c=.o}
-
-.c.o:
-	cc ${FLAGS} -c $< -o ${<:.c=.o}
 
 all: $(NAME)
 
