@@ -65,3 +65,5 @@ fclean:
 	rm -f $(M_OBJS) $(B_OBJS) $(NAME)
 
 re: fclean all
+
+.PHONY: all bonus clean fclean re
